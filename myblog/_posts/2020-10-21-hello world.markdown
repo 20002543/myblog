@@ -14,4 +14,8 @@ hello lovely to meet you!
 
 <a href="https://gracemytest.netlify.app/">Me, online!</a>
 
+<img src="/media/img/cats.png">
+
 This is **my** blog.
+
+[Gallery of nonsence museum](/media/blog.html)
