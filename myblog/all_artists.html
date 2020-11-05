@@ -1,0 +1,30 @@
+---
+layout: page
+title: All the Chinese Artists
+---
+
+{% for artists in site.data.artists %}
+
+<ul>
+    {{ artists.html }}
+    <li>{{ artists.ChineseName }} / {{ artists.Gender }} {{ artists.BirthYear }}-{{ artists.DeathYear }}</li>
+    From: {{ artists.Nationality }}
+    /media/china-artworks/{{ artists.EnglishName}}_{{ artists.ChineseName}}/
+    <figure> 
+    <img src="china-artworks/{{ artists.EnglishName | replace:' ','_'}}_/{{ artists.EnglishName |replace:' ','_'}}_0{{i}}.jpg">
+    </figure>
+</ul>
+
+{% endfor %}
+
+    <table>
+    {% tablerow artists in site.data.artists %}
+    {{ artists.ChineseName }}
+    {% endtablerow %}
+    {% tablerow artists in site.data.artists %}
+    {{ artists.Gender }}
+    {% endtablerow %}
+    {% tablerow artists in site.data.artists %}
+    {{ artists.BirthYear }}-{{ artists.DeathYear }}
+    {% endtablerow %}
+    </table>

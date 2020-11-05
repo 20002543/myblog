@@ -12,10 +12,10 @@ hello lovely to meet you!
 > blah and the shepherd says
 > woops.
 
-<a href="https://gracemytest.netlify.app/">Me, online!</a>
+<a href="https://gracemytest.netlify.app/"Me, online!></a>
 
 <img src="/media/img/cats.png">
 
 This is **my** blog.
 
-[Gallery of nonsence museum](/media/blog.html)
+[British Museum](/media/blog.html)
