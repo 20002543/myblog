@@ -1,0 +1,11 @@
+---
+layout: post
+title: 1980s bands
+---
+
+{% for band in site.data.metal_bands_2017 %}
+    {% assign band_formed = band.formed | plus: 0 %}
+    {% if band_formed < 1990 and band_formed >= 1980 %}
+        <p>{{ band.band_name }} : {{ band_formed }}</p>
+    {% endif %}
+{% endfor %}
